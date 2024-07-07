@@ -1,0 +1,10 @@
+.pageHeader{
+    background-color: black;
+}
+
+.logoImg{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+}
+
