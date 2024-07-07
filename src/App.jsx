@@ -1,3 +1,4 @@
+import Counter from "./components/Counter";
 import Header from "./components/Header"
 import Main from "./components/Main";
 
@@ -10,6 +11,7 @@ function App() {
   return <>
       <Header isLogin={isLogin}/>
       <Main isLogin={isLogin} user={user}/>
+      <Counter />
   </>
 }
 
