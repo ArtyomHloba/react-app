@@ -1,10 +1,21 @@
 .pageHeader{
-    background-color: black;
+    box-shadow: 0 0 15px gray;
+    padding: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
 }
 
+.userImg,
 .logoImg{
     width: 70px;
     height: 70px;
     object-fit: cover;
+}
+
+.userImg{
+    border-radius: 50%;
 }
 
