@@ -1,3 +1,4 @@
+import classNames from 'classnames'
 import styles from './NavLinks.module.css'
 
 function NavLinks() {
@@ -59,13 +60,20 @@ function NavLinks() {
     isActive: false,
   }]  
 
-  const mapNavList = nl => (
-    <li key={nl.icon}>
-      <a className={styles.navLink} href={nl.link}>
-        <img className={styles.navImg} src={nl.icon} /> {nl.menuItem}
-      </a>
-    </li>
-  )
+  const mapNavList = nl => {
+    // const linkClassName = `${styles.navLink}${
+    //     nl.isActive ? ` ${styles.activeNavLink}` : ""
+    //   }`;
+    const linkClassName = classNames(styles.navLink, {[styles.activeNavLink]: nl.isActive})
+
+    return (
+        <li key={nl.icon}>
+        <a className={linkClassName} href={nl.link}>
+          <img className={styles.navImg} src={nl.icon} /> {nl.menuItem}
+        </a>
+      </li>
+    );
+};
 
   return <ul className={styles.navList} >{navLinks.map(mapNavList)}</ul>
 }
