@@ -1,7 +1,7 @@
-function Main({isLogin, user:{specOffers}}) {
-    const offerStyle ={
-        color: "red"
-    }
+function Main({ isLogin, user: { specOffers } }) {
+  const offerStyle = {
+    color: "red",
+  };
 
   return (
     <main>
@@ -9,7 +9,7 @@ function Main({isLogin, user:{specOffers}}) {
         {isLogin ? specOffers : "Register for up to -50%"}
       </p>
     </main>
-);
+  );
 }
 
-export default Main
+export default Main;
