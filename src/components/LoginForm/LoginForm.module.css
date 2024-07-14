@@ -37,3 +37,9 @@
   border: none;
   cursor: pointer;
 }
+.validInput {
+  background-color: lightgreen;
+}
+.invalidInput {
+  background-color: lightcoral;
+}
